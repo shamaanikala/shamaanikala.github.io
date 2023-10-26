@@ -8,6 +8,8 @@ layout: default
 The [GitHub profile][shamaanikala] consists of mainly course exercises and projects from my studies in the University of Helsinki.
 There are also some personal projects.
 
+[CV template](assets/documents/Command_Line_Tools_CV.pdf)
+
 ##### Interests
 
 _Mathematics, Theoretical Physics, Linguistics, Computer Science_
