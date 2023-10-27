@@ -13,7 +13,7 @@ Main foucs of the course is UNIX (or Linux) command line, several different comm
 
 ---
 
-I used mainly Ubuntu Linux 22.04 LTS within Windows Subsystem Linux 2 (WSL2) with _bash_ shell.
+_I used bash shell mainly within Ubuntu Linux 22.04 LTS in Windows Subsystem Linux 2 (WSL2)._
 
 ## Table of Contents
 
