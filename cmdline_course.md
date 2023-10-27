@@ -4,6 +4,17 @@ layout: default
 
 # Command-Line Course
 
+## Introduction
+
+[_Command-Line Tools for Linguists_](https://studies.helsinki.fi/kurssit/toteutus/hy-opt-cur-2324-261401a1-c550-4436-91b9-7edf4a1a3b57) is a 5 credit intermediate level course unit of Bachelor's Programme in Languages in University of Helsinki.
+([More details.](https://studies.helsinki.fi/courses/course-unit/otm-92ee484e-456b-409f-a397-d9d2b6e40a2f/KIK-LG221))
+
+Main foucs of the course is UNIX (or Linux) command line, several different command line tools, their basic usage and also a bit how to use the tools in language technology related problems.
+
+---
+
+I used mainly Ubuntu Linux 22.04 LTS within Windows Subsystem Linux 2 (WSL2) with _bash_ shell.
+
 ## Table of Contents
 
 <!-- prettier-ignore -->
@@ -63,6 +74,10 @@ https://prettier.io/docs/en/ignore.html#markdown
 * Do not remove this line (it will not be displayed)
 {:toc}
 ```
+
+## MISC
+
+The course did take into account the differences between linux and mac environments.
 
 ## Conclusion
 
