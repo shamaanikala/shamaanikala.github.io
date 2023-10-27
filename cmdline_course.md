@@ -84,3 +84,9 @@ The course did take into account the differences between linux and mac environme
 Mihail Cxcdsfssss defines flow...
 This course did manage hit that spot..
 I could deepen my understanding of regex, bash and sed, grep...
+
+## Appendix A: Used Commands
+
+| `bash` command | description |
+| -------------- | ----------- |
+| `ls`           | Lists files |
