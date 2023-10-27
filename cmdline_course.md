@@ -25,7 +25,31 @@ _I used bash shell mainly within Ubuntu Linux 22.04 LTS in Windows Subsystem Lin
 
 ### Introduction Lecture
 
+The first week had the only on-site lecture of the course.
+The
+
 <!-- Koodiesimerkki -->
+
+#### Example 1.1: Creating a frequency list of words in a text file
+
+Suppose there is a text file `file.txt` in the working directory:
+
+```bash
+cat file.txt | tr -s '\r\n' '\n' \
+  | grep "." \
+  | sort \
+  | uniq -c \
+  | sort -nr \
+  | head -10
+
+```
+
+where the `\` (backslash) can be used to split the commands to multiple lines.
+
+---
+
+I have used command line for years already.
+Still the UNIX tool `tr` was something I don't recall ever using or seeing before.
 
 ## Week 2: Navigating a UNIX System
 
@@ -34,6 +58,8 @@ _I used bash shell mainly within Ubuntu Linux 22.04 LTS in Windows Subsystem Lin
 ## Week 3: Basic Corpus Processing
 
 <!-- Koodiesimerkki -->
+
+#### Unix and Windows line endings
 
 ## Week 4: Advanced Corpus Processing
 
