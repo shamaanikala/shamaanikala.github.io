@@ -4,6 +4,8 @@ layout: default
 
 ## Introduction
 
+_This website is a final assigment for [Command-Line Course](cmdline_course.html)._
+
 <img src="assets/images/Google-Noto-Emoji-Smileys-10109-cat-face-with-wry-smile.1024.png" alt="Photo" hspace="20" width="30%" align="right"/>
 The [GitHub profile][shamaanikala] consists of mainly course exercises and projects from my studies in the University of Helsinki.
 There are also some personal projects.
