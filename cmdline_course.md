@@ -2,27 +2,47 @@
 layout: default
 ---
 
+# Command-Line Course
+
 ## Table of Contents
 
 <!-- prettier-ignore -->
 * Do not remove this line (it will not be displayed)
 {:toc}
 
-## Week 1
+## Week 1: Introduction to Command Line Environments
 
-## Week 2
+### Introduction Lecture
 
-## Week 3
+<!-- Koodiesimerkki -->
 
-## Week 4
+## Week 2: Navigating a UNIX System
 
-## Week 5
+<!-- Koodiesimerkki -->
 
-## Week 6
+## Week 3: Basic Corpus Processing
 
-## Week 7
+<!-- Koodiesimerkki -->
 
-## Final Assignment
+## Week 4: Advanced Corpus Processing
+
+<!-- Koodiesimerkki -->
+
+## Week 5: Scripting and Configuration Files
+
+<!-- Koodiesimerkki -->
+
+## Week 6: Installing and Running Programs
+
+### Python Virtual Environments
+
+<!-- Koodiesimerkki -->
+
+## Week 7: Version Control
+
+<!-- Koodiesimerkki -->
+
+## Final Assignment: Building Webpages using GitHub Pages
 
 ### How to add Table of Contents
 
@@ -43,3 +63,9 @@ https://prettier.io/docs/en/ignore.html#markdown
 * Do not remove this line (it will not be displayed)
 {:toc}
 ```
+
+## Conclusion
+
+Mihail Cxcdsfssss defines flow...
+This course did manage hit that spot..
+I could deepen my understanding of regex, bash and sed, grep...
