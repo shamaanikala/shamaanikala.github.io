@@ -127,10 +127,21 @@ Mihail Cxcdsfssss defines flow...
 This course did manage hit that spot..
 I could deepen my understanding of regex, bash and sed, grep...
 
-## Appendix A: Used Commands
+## Appendix A: Commands
 
-| `bash` command | description                         |
-| -------------- | ----------------------------------- |
-| `ls`           | Lists files                         |
-| `tr`           |                                     |
-| `ln`           | Create links within the file system |
+The table lists selection of the commands used during the course with a short description.
+
+| `bash` command    | description                                                   |
+| ----------------- | ------------------------------------------------------------- |
+| `ls`              | Lists files                                                   |
+| `tr`              |                                                               |
+| `ln`              | Create links within the file system                           |
+| `chmod`           | Edit the file permissions                                     |
+| `touch`           | "Touch" a file. Create an empty file if it doesn't exist yet. |
+| `mkdir`           | Create new folder/directory                                   |
+| `cp`              | Copy file                                                     |
+| `ssh`             |                                                               |
+| `scp`             |                                                               |
+| `cat`             | Catenate files. Or output one file to the terminal            |
+| `rm`              | Remove file                                                   |
+| `which <command>` | Outputs the location of `<command>` stored in the `$PATH`     |
