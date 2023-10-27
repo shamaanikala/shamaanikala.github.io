@@ -10,7 +10,7 @@ _This website is a final assigment for [Command-Line Course](cmdline_course.html
 The [GitHub profile][shamaanikala] consists of mainly course exercises and projects from my studies in the University of Helsinki.
 There are also some personal projects.
 
-[CV template draft](assets/documents/Command_Line_Tools_CV.pdf)
+CV template draft [`pdf`](assets/documents/Command_Line_Tools_CV.pdf)[`tex`](assets/documents/Command_Line_Tools_CV.tex)
 
 ##### Interests
 
