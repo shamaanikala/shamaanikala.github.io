@@ -26,7 +26,7 @@ _I used bash shell mainly within Ubuntu Linux 22.04 LTS in Windows Subsystem Lin
 ### Introduction Lecture
 
 The first week had the only on-site lecture of the course.
-The
+The lecture included the following command-line snippet:
 
 <!-- Koodiesimerkki -->
 
@@ -48,8 +48,12 @@ where the `\` (backslash) can be used to split the commands to multiple lines.
 
 ---
 
-I have used command line for years already.
+I have used command line for years already so first week was easy.
 Still the UNIX tool `tr` was something I don't recall ever using or seeing before.
+
+### Exercises
+
+The first week focused on setting up bash and basic command-line usage.
 
 ## Week 2: Navigating a UNIX System
 
