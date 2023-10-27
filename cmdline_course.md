@@ -62,7 +62,7 @@ Second week had more basic usage such as using and navigating the file system an
 #### Example 2.1 Connecting remote server with `ssh`
 
 ```bash
-ssh username
+ssh username@remote.host
 ```
 
 ---
@@ -70,6 +70,8 @@ ssh username
 _The interview video with the creator of `ssh` tool was interesting._
 
 _Creating links with `ln` was something that I hadn't done that much, so it was nice to learn more about it._
+
+_Using `ssh` config was new to me._
 
 ## Week 3: Basic Corpus Processing
 
@@ -134,14 +136,19 @@ The table lists selection of the commands used during the course with a short de
 | `bash` command    | description                                                   |
 | ----------------- | ------------------------------------------------------------- |
 | `ls`              | Lists files                                                   |
-| `tr`              |                                                               |
+| `tr`              | Translates or deletes characters                              |
 | `ln`              | Create links within the file system                           |
 | `chmod`           | Edit the file permissions                                     |
 | `touch`           | "Touch" a file. Create an empty file if it doesn't exist yet. |
 | `mkdir`           | Create new folder/directory                                   |
 | `cp`              | Copy file                                                     |
-| `ssh`             |                                                               |
-| `scp`             |                                                               |
+| `ssh`             | _Secure SHell_, connect to a remote server                    |
+| `scp`             | _Secure Copy_, Exchange files with the remote server          |
 | `cat`             | Catenate files. Or output one file to the terminal            |
 | `rm`              | Remove file                                                   |
 | `which <command>` | Outputs the location of `<command>` stored in the `$PATH`     |
+| `kill`            | Kill a process                                                |
+| `ps aux`          | List processes                                                |
+| `grep`            |                                                               |
+| `sort`            |                                                               |
+| `wget`            | Download files                                                |
