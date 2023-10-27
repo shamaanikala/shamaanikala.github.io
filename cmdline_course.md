@@ -23,6 +23,8 @@ _I used bash shell mainly within Ubuntu Linux 22.04 LTS in Windows Subsystem Lin
 
 ## Week 1: Introduction to Command Line Environments
 
+The first week focused on setting up bash and basic command-line usage.
+
 ### Introduction Lecture
 
 The first week had the only on-site lecture of the course.
@@ -48,16 +50,26 @@ where the `\` (backslash) can be used to split the commands to multiple lines.
 
 ---
 
-I have used command line for years already so first week was easy.
-Still the UNIX tool `tr` was something I don't recall ever using or seeing before.
-
-### Exercises
-
-The first week focused on setting up bash and basic command-line usage.
+_I have used command line for years already so first week was easy._
+_Still the UNIX tool `tr` was something I don't recall ever using or seeing before._
 
 ## Week 2: Navigating a UNIX System
 
+Second week had more basic usage such as using and navigating the file system and connecting to a remote server.
+
 <!-- Koodiesimerkki -->
+
+#### Example 2.1 Connecting remote server with `ssh`
+
+```bash
+ssh username
+```
+
+---
+
+_The interview video with the creator of `ssh` tool was interesting._
+
+_Creating links with `ln` was something that I hadn't done that much, so it was nice to learn more about it._
 
 ## Week 3: Basic Corpus Processing
 
@@ -117,6 +129,8 @@ I could deepen my understanding of regex, bash and sed, grep...
 
 ## Appendix A: Used Commands
 
-| `bash` command | description |
-| -------------- | ----------- |
-| `ls`           | Lists files |
+| `bash` command | description                         |
+| -------------- | ----------------------------------- |
+| `ls`           | Lists files                         |
+| `tr`           |                                     |
+| `ln`           | Create links within the file system |
