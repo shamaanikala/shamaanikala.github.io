@@ -316,7 +316,7 @@ To quit the virtual environment:
 
 ---
 
-_One of the most interesting parts about this week for me was the use of Makefiles to do something other than compiling and linking C and C++._
+_One of the most interesting part about this week for me was the use of Makefiles to do something other than compiling and linking C and C++._
 
 ## Week 7: Version Control
 
