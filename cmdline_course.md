@@ -136,12 +136,25 @@ _It was fun to learn more about_ `grep`_!_
 
 ## Week 4: Advanced Corpus Processing
 
+Fourth week focused on `sed` tool and piping commands with `|` operator.
+Using `sed` tool included also even more work with regular expressions.
+
+The exercises also included some basic statistical analysis of the text corpora.
+
 <!-- Koodiesimerkki -->
+
+#### Example 4.1 Using `sed` and `grep` together with piping
+
+First select only the lines with "Example" using extended regex `-r`, only output these selected lines `-n` and then pipe the output to `grep` and count `-c` the lines with string "Example":
+
+```bash
+sed -rn '/\bExample/p' < cmdline_course.md | grep -c 'Example'
+```
 
 ---
 
 _This was the one of the most time consuming weeks._
-_For some reason I also got many of the exercises wrong eventhough I checked and rechecked my answers and regular expressions many times before submitting the Moodle Quiz._
+_For some reason I also got many of the exercises wrong even though I checked and rechecked my answers and regular expressions many times before submitting the Moodle Quiz._
 _I wonder if the there were some differences between my Project Gutenberg text files and the ones used with the model solutions._
 
 ## Week 5: Scripting and Configuration Files
@@ -153,7 +166,7 @@ _I wonder if the there were some differences between my Project Gutenberg text f
 ### Python Virtual Environments
 
 ![xkcd comic about the complicated nature of Python environment](https://imgs.xkcd.com/comics/python_environment.png)  
-[Original comic](https://xkcd.com/1987/)
+[Original location](https://xkcd.com/1987/)
 
 <!-- Koodiesimerkki -->
 
@@ -197,30 +210,34 @@ I could deepen my understanding of regex, bash and sed, grep...
 
 The table lists selection of the commands used during the course with a short description.
 
-| `bash` command    | description                                                      |
-| ----------------- | ---------------------------------------------------------------- |
-| `ls`              | Lists files                                                      |
-| `tr`              | Translates or deletes characters                                 |
-| `ln`              | Create links within the file system                              |
-| `chmod`           | Edit the file permissions                                        |
-| `touch`           | "Touch" a file. Create an empty file if it doesn't exist yet.    |
-| `mkdir`           | Create new folder/directory                                      |
-| `cp`              | Copy file                                                        |
-| `ssh`             | _Secure SHell_, connect to a remote server                       |
-| `scp`             | _Secure Copy_, Exchange files with the remote server             |
-| `cat`             | Catenate files. Or output one file to the terminal               |
-| `rm`              | Remove file                                                      |
-| `which <command>` | Outputs the location of `<command>` stored in the `$PATH`        |
-| `kill`            | Kill a process                                                   |
-| `ps aux`          | List processes                                                   |
-| `grep`            | Filter standard output or files with regular expressions.        |
-| `sort`            | Sort standard output                                             |
-| `wget`            | Download files                                                   |
-| `nano`            | Simple command line text editor                                  |
-| `vim`             | Powerful command line text editor                                |
-| `less`            | Display text file                                                |
-| `dos2unix`        | Change Windows line-endings to Unix line-endings                 |
-| `unix2dos`        | Change Unix line-endings to Windows line-endings                 |
-| `iconv`           | Conver text file character encondings                            |
-| `uniq`            | "_report or omit repeated lines_" - `whatis uniq`                |
-| `whatis`          | "_display one-line manuaal page descriptions_" - `whatis whatis` |
+| `bash` command    | description                                                                                                     |
+| ----------------- | --------------------------------------------------------------------------------------------------------------- |
+| `ls`              | Lists files                                                                                                     |
+| `tr`              | Translates or deletes characters                                                                                |
+| `ln`              | Create links within the file system                                                                             |
+| `chmod`           | Edit the file permissions                                                                                       |
+| `touch`           | "Touch" a file. Create an empty file if it doesn't exist yet.                                                   |
+| `mkdir`           | Create new folder/directory                                                                                     |
+| `cp`              | Copy file                                                                                                       |
+| `ssh`             | _Secure SHell_, connect to a remote server                                                                      |
+| `scp`             | _Secure Copy_, Exchange files with the remote server                                                            |
+| `cat`             | Catenate files. Or output one file to the terminal                                                              |
+| `rm`              | Remove file                                                                                                     |
+| `which <command>` | Outputs the location of `<command>` stored in the `$PATH`                                                       |
+| `kill`            | Kill a process                                                                                                  |
+| `ps aux`          | List processes                                                                                                  |
+| `grep`            | Filter standard output or files with regular expressions.                                                       |
+| `sort`            | Sort standard output                                                                                            |
+| `wget`            | Download files                                                                                                  |
+| `nano`            | Simple command line text editor                                                                                 |
+| `vim`             | Powerful command line text editor                                                                               |
+| `less`            | Display text file                                                                                               |
+| `dos2unix`        | Change Windows line-endings to Unix line-endings                                                                |
+| `unix2dos`        | Change Unix line-endings to Windows line-endings                                                                |
+| `iconv`           | Conver text file character encondings                                                                           |
+| `uniq`            | "_report or omit repeated lines_" - `whatis uniq`                                                               |
+| `whatis`          | "_display one-line manuaal page descriptions_" - `whatis whatis`                                                |
+| `wc`              | "_print newline, word, and byte counts for each file_" - `whatis wc`. <br /> Or calculate word and line counts. |
+| `sed`             | "_stream editor for filtering and transforming text_" - `whatis sed`                                            |
+| `paste`           | "_merge lines of files_" - `whatis paste`                                                                       |
+| `echo`            | "_display a line of text_" - `whatis echo`                                                                      |
