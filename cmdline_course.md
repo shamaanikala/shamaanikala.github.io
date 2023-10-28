@@ -275,6 +275,12 @@ _There were many new command-line variables that I didn't know, like `$OLDPWD` o
 
 ## Final Assignment: Building Webpages using GitHub Pages
 
+### CV
+
+I decided to focus on this website more than to the CV.
+I created a simple draft template of CV in [Overleaf](https://www.overleaf.com).
+I generated some dummy text to the CV with [LaTeX lipsum-package](https://ctan.org/pkg/lipsum).
+
 ### How to add Table of Contents
 
 https://stackoverflow.com/questions/9602936/how-to-create-a-table-of-contents-to-jekyll-blog-post
@@ -301,7 +307,7 @@ HTML has the ability to use hyperlinks within the website itself.
 Many Markdown engines supports extended syntax (including Jekyll) which enables [creating and linking to heading ids](https://www.markdownguide.org/extended-syntax/#heading-ids).
 
 ```markdown
-## Heading {#own-heading-id}
+##### Heading {#own-heading-id}
 
 <!-- linking to the heading -->
 
@@ -312,7 +318,7 @@ _Visualising the above example:_
 
 ---
 
-> ## Heading {#own-heading-id}
+> ##### Heading {#own-heading-id}
 >
 > <!-- linking to the heading -->
 >
