@@ -178,6 +178,9 @@ These variables can be used in the bash command line and in scripts.
 | `$@`        | All arguments                                              |
 | `$?`        | Exit code of the latest process                            |
 | `$$`        | Process PID of the current script                          |
+| `$RANDOM`   | Random number                                              |
+| `$PWD`      | Current working directory or `pwd`.                        |
+| `$OLDPWD`   | Previous working directory                                 |
 
 #### Example 5.1 Bash-script to calculate frequency list similar to [Example 1.1](#example-1.1)
 
@@ -209,7 +212,41 @@ sort -nr > $2
 
 ```
 
-Differences between [Example 1.1](#example-1.1):
+Some differences between [Example 1.1](#example-1.1):
+
+- `dos2unix` is used instead of `tr '\r\n' '\n'`.
+- At the end the output is forwarded to a text file which name is given as second command line argument `$2`.
+
+Also note the usage of special [POSIX regural expression character classes](https://en.wikibooks.org/wiki/Regular_Expressions/POSIX_Basic_Regular_Expressions#Character_classes) such as `[:space:]`!
+
+#### Example 5.2 Command substitution syntax
+
+I bash one can use commands inside commands with command substitution
+
+1. Command inside _backticks_ `` ` ``
+   > `` `<command>` ``
+2. Command inside `$( )`
+   > `$( <command> )`
+
+```bash
+echo /etc directory has `ls /etc | wc -l` targets.
+```
+
+```bash
+echo /etc directory has $(ls /etc | wc -l) targets.
+```
+
+#### Example 5.3 Basic arithmetic operations within bash
+
+With expression `$(( x € y))`, where `x` and `y` are numeric values and `€` is a arithmetic operator, one can calculate within bash.
+
+Check if the number of lines in a text file `file.txt` is even (it outputs `0` if the answer is even):
+
+```bash
+echo $(( `wc -l < file.txt` % 2))
+```
+
+where `%` is the mod operator.
 
 ---
 
@@ -218,6 +255,8 @@ _Ability to write reliable and reusable bash-scripts is a really valuable skill 
 _The problem is that many times it is really time consuming and writing a similar Python script is much faster._
 _Debugging and testing bash scripts isn't the most streamlined procedure or maybe I am unaware how to do it properly._
 _Still this was maybe one of the most fun weeks as the bash scripting is quite fun._
+
+_There were many new command-line variables that I didn't know, like `$OLDPWD` or using `cd -` to change directory to the `$OLDPWD`._
 
 ## Week 6: Installing and Running Programs
 
@@ -327,3 +366,5 @@ The table lists selection of the commands used during the course with a short de
 | `paste`           | "_merge lines of files_" - `whatis paste`                                                                       |
 | `echo`            | "_display a line of text_" - `whatis echo`                                                                      |
 | `export`          | "Export"/"Define" environmental variable                                                                        |
+| `pwd`             | Current working directory                                                                                       |
+| `cd`              | Change directory                                                                                                |
