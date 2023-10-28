@@ -25,6 +25,8 @@ _I used bash shell mainly within Ubuntu Linux 22.04 LTS in Windows Subsystem Lin
 
 The first week focused on setting up bash and basic command-line usage.
 
+This week also introduced the text editor `nano`.
+
 ### Introduction Lecture
 
 The first week had the only on-site lecture of the course.
@@ -52,6 +54,9 @@ where the `\` (backslash) can be used to split the commands to multiple lines.
 
 _I have used command line for years already so first week was easy._
 _Still the UNIX tool `tr` was something I don't recall ever using or seeing before._
+
+_I have been using Vim as my command-line editor so I decided to use it instead of Nano._
+_I actually need to find the keyboard shortcut to quit Nano_ 😹.
 
 ## Week 2: Navigating a UNIX System
 
@@ -152,3 +157,5 @@ The table lists selection of the commands used during the course with a short de
 | `grep`            |                                                               |
 | `sort`            |                                                               |
 | `wget`            | Download files                                                |
+| `nano`            | Simple command line text editor                               |
+| `vim`             | Powerful command line text editor                             |
