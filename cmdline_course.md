@@ -364,15 +364,25 @@ _There was also a bug with the Python script which I tried to debug and fix._
 
 ## Final Assignment: Building Webpages using GitHub Pages
 
+The final project of the course is this GitHub Pages website built with [Jekyll](https://jekyllrb.com/).
+
+---
+
+_The workflow of forking an existing GitHub Pages theme was clever._
+
+_I have been thinking about trying out GitHub Pages for some time, so this course project was really useful and fun._
+
 ### CV
 
 I decided to focus on this website more than to the CV.
 I created a simple draft template of CV in [Overleaf](https://www.overleaf.com).
 I generated some dummy text to the CV with [LaTeX lipsum-package](https://ctan.org/pkg/lipsum).
 
-### How to add Table of Contents
+### Notes about creating this website
 
-https://stackoverflow.com/questions/9602936/how-to-create-a-table-of-contents-to-jekyll-blog-post
+#### How to add Table of Contents
+
+I wanted to add a Table of Contents to this site and I found a [Stack Overflow post](https://stackoverflow.com/questions/9602936/how-to-create-a-table-of-contents-to-jekyll-blog-post) about how to do it.
 
 <!-- prettier-ignore -->
 ```markdown
@@ -381,8 +391,9 @@ https://stackoverflow.com/questions/9602936/how-to-create-a-table-of-contents-to
 
 ````
 
-if using Prettier jotakinjotakin
-https://prettier.io/docs/en/ignore.html#markdown
+I'm using Visual Studio Code with [Prettier code formatter](https://prettier.io/) [extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode).
+When trying to implement the above `{:toc}` command the Prettier formatting kept messing it up at every save.
+Therefore I needed to find out how [Prettier ignore](https://prettier.io/docs/en/ignore.html) works with Markdown files and I was able to find [it](https://prettier.io/docs/en/ignore.html#markdown).
 
 ```markdown
 <!-- prettier-ignore -->
