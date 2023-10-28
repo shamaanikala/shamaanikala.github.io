@@ -152,6 +152,9 @@ _I wonder if the there were some differences between my Project Gutenberg text f
 
 ### Python Virtual Environments
 
+![xkcd comic about the complicated nature of Python environment](https://imgs.xkcd.com/comics/python_environment.png)  
+[Original comic](https://xkcd.com/1987/)
+
 <!-- Koodiesimerkki -->
 
 ## Week 7: Version Control
