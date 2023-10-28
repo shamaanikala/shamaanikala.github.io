@@ -163,6 +163,8 @@ _I wonder if the there were some differences between my Project Gutenberg text f
 
 Bash configuration with `.bashrc` and basic bash-scripting.
 
+Shell prompt customization with `PS1`.
+
 ### Table of bash variables
 
 Table based on the table found in [this bash-scripting tutorial](https://ryanstutorials.net/bash-scripting-tutorial/bash-variables.php).
