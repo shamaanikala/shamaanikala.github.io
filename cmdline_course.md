@@ -159,13 +159,67 @@ _I wonder if the there were some differences between my Project Gutenberg text f
 
 ## Week 5: Scripting and Configuration Files
 
-<!-- Koodiesimerkki -->
+Bash configuration with `.bashrc` and basic bash-scripting.
+
+### Table of bash variables
+
+Table based on the table found in [this bash-scripting tutorial](https://ryanstutorials.net/bash-scripting-tutorial/bash-variables.php).
+The tutorial was used in the course and was well written.
+
+These variables can be used in the bash command line and in scripts.
+
+| Variable    | Description                                                |
+| ----------- | ---------------------------------------------------------- |
+| `$0`        | name of the script (or first command line argument given)  |
+| `$1` - `$9` | command line arguments 1-9 given to the script             |
+| `$#`        | number of total command line arguments given to the script |
+| `$@`        | All arguments                                              |
+| `$?`        | Exit code of the latest process                            |
+| `$$`        | Process PID of the current script                          |
+
+#### Example 5.1 Bash-script to calculate frequency list similar to
+
+```bash
+#!/bin/bash
+
+# script: ferqlist.sh
+#
+# Read a text file from the stadard input and compute a
+# frequency list of the words in the text. Print output
+# to standard output.
+#
+# Abort the script if either file $1 or $2 is missing
+
+if [ $# -ne 2 ]
+then
+  echo "ERROR: Two command line arguments required!"
+  echo "$0 input_text_file output_freq_file"
+  exit 1
+fi
+
+cat $1 |
+dos2unix |
+tr -s "[:space:]" "\n" |
+tr -d "[:punct:]" |
+sort |
+uniq -c |
+sort -nr > $2
+
+```
+
+---
+
+_Another time consuming week._
+_Ability to write reliable and reusable bash-scripts is a really valuable skill in my opinion._
+_The problem is that many times it is really time consuming and writing a similar Python script is much faster._
+_Debugging and testing bash scripts isn't the most streamlined procedure or maybe I am unaware how to do it properly._
+_Still this was maybe one of the most fun weeks as the bash scripting is quite fun._
 
 ## Week 6: Installing and Running Programs
 
 ### Python Virtual Environments
 
-![xkcd comic about the complicated nature of Python environment](https://imgs.xkcd.com/comics/python_environment.png)  
+![xkcd comic about the complicated nature of Python environment](https://imgs.xkcd.com/comics/python_environment.png)
 [Original location](https://xkcd.com/1987/)
 
 <!-- Koodiesimerkki -->
@@ -185,7 +239,7 @@ https://stackoverflow.com/questions/9602936/how-to-create-a-table-of-contents-to
 * Do not remove this line (it will not be displayed)
 {:toc}
 
-```
+````
 
 if using Prettier jotakinjotakin
 https://prettier.io/docs/en/ignore.html#markdown
@@ -241,3 +295,4 @@ The table lists selection of the commands used during the course with a short de
 | `sed`             | "_stream editor for filtering and transforming text_" - `whatis sed`                                            |
 | `paste`           | "_merge lines of files_" - `whatis paste`                                                                       |
 | `echo`            | "_display a line of text_" - `whatis echo`                                                                      |
+| `export`          | "Export"/"Define" environmental variable                                                                        |
