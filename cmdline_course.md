@@ -60,7 +60,13 @@ _I actually need to find the keyboard shortcut to quit Nano_ 😹.
 
 ## Week 2: Navigating a UNIX System
 
-Second week had more basic usage such as using and navigating the file system and connecting to a remote server.
+Second week had more basic usage such as using and navigating the file system.  
+Week 2 looked into following concepts and related tools:
+
+- Process management
+- File permissions
+- Remote server usage with `ssh`
+- Remote server file operations with `scp`
 
 <!-- Koodiesimerkki -->
 
@@ -68,6 +74,12 @@ Second week had more basic usage such as using and navigating the file system an
 
 ```bash
 ssh username@remote.host
+```
+
+#### Example 2.2 Copying `file.txt` from current working directory to a remote server folder `remote_dir` inside users `/home`-directory with `scp`
+
+```bash
+scp  file.txt username@remote.host:~/remote_dir
 ```
 
 ---
