@@ -262,12 +262,61 @@ _There were many new command-line variables that I didn't know, like `$OLDPWD` o
 
 ## Week 6: Installing and Running Programs
 
+This week focused on installing software to the system.
+One example of `apt-get` can be seen in the previous [Example 3.2](#example-32-using-ap-get-to-install-dos2unix).
+
+The other part of the week was using Python with tools like `pip`, configuring Python virtual environments and trying out a selection of language technology related tools such as
+
+- [_Natural Language Toolkit (nltk)_](https://www.nltk.org/)
+- [_BLLIP natural language parser_](https://pypi.org/project/bllipparser/)
+- [Python package to guess the language of given input text](https://pypi.org/project/guess_language-spirit/)
+
+Makefiles were also introduced during this week.
+
 ### Python Virtual Environments
 
+Installing Python can sometimes be a bit complicated.
+The following comic is quite close to reality:
+
 ![xkcd comic about the complicated nature of Python environment](https://imgs.xkcd.com/comics/python_environment.png)
+
 [Original location](https://xkcd.com/1987/)
 
-<!-- Koodiesimerkki -->
+To counter this mess, a **virtual environment** should be used.
+
+#### Example 6.1 Setting up and using Python virtual environment
+
+This is from the [docs](https://docs.python.org/3/library/venv.html):
+
+> ```bash
+> python -m venv /path/to/new/virtual/environment
+> ```
+
+My own preferred method of creating and launching the virtual environment is the following:
+
+```bash
+mkdir VENV
+python -m venv VENV
+source VENV/bin/activate
+```
+
+The active virtual environment is written to the beginning of the shell prompt `(<venv name>)`.
+
+Now the needed Python packages can (and needs to) be installed with `pip`:
+
+```bash
+(VENV) pip install <package>
+```
+
+To quit the virtual environment:
+
+```bash
+(VENV) deactivate
+```
+
+---
+
+_One of the most interesting parts about this week for me was the use of Makefiles to do something other than compiling and linking C and C++._
 
 ## Week 7: Version Control
 
