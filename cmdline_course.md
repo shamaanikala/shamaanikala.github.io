@@ -165,7 +165,9 @@ Bash configuration with `.bashrc` and basic bash-scripting.
 
 Shell prompt customization with `PS1`.
 
-### Table of bash variables
+### Bash scripting
+
+#### Table of bash variables
 
 Table based on the table found in [this bash-scripting tutorial](https://ryanstutorials.net/bash-scripting-tutorial/bash-variables.php).
 The tutorial was used in the course and was well written.
