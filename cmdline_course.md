@@ -32,8 +32,6 @@ This week also introduced the text editor `nano`.
 The first week had the only on-site lecture of the course.
 The lecture included the following command-line snippet:
 
-<!-- Koodiesimerkki -->
-
 #### Example 1.1: Creating a frequency list of words in a text file {#example-1.1}
 
 The list is outputted to the standard output stream.
@@ -322,7 +320,47 @@ _One of the most interesting part about this week for me was the use of Makefile
 
 ## Week 7: Version Control
 
-<!-- Koodiesimerkki -->
+Week 7 was about Git and GitHub.
+In the exercises the previous weeks exercise was used as a basis for creating a public [GitHub repository](https://github.com/shamaanikala/cmdline-course).
+
+#### Example 7.1 Configuring Git with GitHub user account and `ssh`
+
+[Detailed instructions on GitHub Docs](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
+
+The following assumes that you have done the needed configuration as instructed in the GitHub Docs (link above)!
+
+```bash
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/<private-key-file>
+
+# Test the ssh connection
+ssh -T git@github.com
+```
+
+When using the `ssh` with GitHub one must use the particular addresses.
+For example cloning the repository
+
+```bash
+git clone git@github.com:shamaanikala/cmdline-course.git
+```
+
+instead of the https
+
+```bash
+git clone https://github.com/shamaanikala/cmdline-course.git
+```
+
+The correct cloning address can be selected from the GitHub repository:  
+![Screenshot from GitHub repository view demonstrating how to select correct clone address between https and ssh](/assets/images/github-cloning-screenshot.png)
+
+---
+
+_For me Git was already quite familiar tool._
+_I have been using it for years and especially during the last summer while doing computer science courses._
+_During the summer I mainly used Visual Studio Code editor which have Git included very well._
+_Therefore I decided to use Git through the command-line for this weeks exercises and material._
+
+_There was also a bug with the Python script which I tried to debug and fix._
 
 ## Final Assignment: Building Webpages using GitHub Pages
 
