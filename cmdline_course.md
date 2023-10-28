@@ -76,7 +76,9 @@ Week 2 looked into following concepts and related tools:
 ssh username@remote.host
 ```
 
-#### Example 2.2 Copying `file.txt` from current working directory to a remote server folder `remote_dir` inside users `/home`-directory with `scp`
+#### Example 2.2 Uploading `file.txt` to a remote server with `scp`
+
+Copying `file.txt` from current working directory to a remote server folder `remote_dir` inside users `/home`-directory with `scp`
 
 ```bash
 scp  file.txt username@remote.host:~/remote_dir
