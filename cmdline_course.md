@@ -34,7 +34,10 @@ The lecture included the following command-line snippet:
 
 <!-- Koodiesimerkki -->
 
-#### Example 1.1: Creating a frequency list of words in a text file
+#### Example 1.1: Creating a frequency list of words in a text file {#example-1.1}
+
+The list is outputted to the standard output stream.
+It can be written in a text file with `>` operator if needed.
 
 Suppose there is a text file `file.txt` in the working directory:
 
@@ -44,7 +47,6 @@ cat file.txt | tr -s '\r\n' '\n' \
   | sort \
   | uniq -c \
   | sort -nr \
-  | head -10
 
 ```
 
@@ -177,7 +179,7 @@ These variables can be used in the bash command line and in scripts.
 | `$?`        | Exit code of the latest process                            |
 | `$$`        | Process PID of the current script                          |
 
-#### Example 5.1 Bash-script to calculate frequency list similar to
+#### Example 5.1 Bash-script to calculate frequency list similar to [Example 1.1](#example-1.1)
 
 ```bash
 #!/bin/bash
@@ -206,6 +208,8 @@ uniq -c |
 sort -nr > $2
 
 ```
+
+Differences between [Example 1.1](#example-1.1):
 
 ---
 
@@ -249,6 +253,33 @@ https://prettier.io/docs/en/ignore.html#markdown
 * Do not remove this line (it will not be displayed)
 {:toc}
 ```
+
+### Linking within the page
+
+HTML has the ability to use hyperlinks within the website itself.
+Many Markdown engines supports extended syntax (including Jekyll) which enables [creating and linking to heading ids](https://www.markdownguide.org/extended-syntax/#heading-ids).
+
+```markdown
+## Heading {#own-heading-id}
+
+<!-- linking to the heading -->
+
+[Click this to see the Heading](#own-heading-id)
+```
+
+_Visualising the above example:_
+
+---
+
+> ## Heading {#own-heading-id}
+>
+> <!-- linking to the heading -->
+>
+> [Click this to see the Heading](#own-heading-id)
+
+---
+
+_End of visualising the example._
 
 ## MISC
 
