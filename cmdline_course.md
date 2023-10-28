@@ -428,15 +428,25 @@ _Visualising the above example:_
 
 _End of visualising the example._
 
-## MISC
-
-The course did take into account the differences between linux and mac environments.
-
 ## Conclusion
 
-Mihail Cxcdsfssss defines flow...
-This course did manage hit that spot..
-I could deepen my understanding of regex, bash and sed, grep...
+I was expecting a rather light course with some basic command-line stuff I was already familiar with.
+What I got was actually much more than I expected.
+The course was quite lightweight but I was pleasantly surprised that at every week I actually learned new and interesting stuff.
+
+From my previous mostly "computer science point of view" many of the topics covered were such that I would call them "scary" and not really basic command line actions 😺.
+
+These "scary" topics include:
+
+- regular expressions
+- extended `grep` usage
+- `sed` -tool
+- (`awk` is missing)
+- bash scripting
+
+Ofcourse these tools are actually more domain-specific for language techonology than contemporary (web) application programming.
+
+Also it was nice to see that the course did take into account the differences between linux and mac environments.
 
 ## Appendix A: Commands
 
