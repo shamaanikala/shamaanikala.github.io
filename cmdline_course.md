@@ -92,9 +92,16 @@ _Using `ssh` config was new to me._
 
 ## Week 3: Basic Corpus Processing
 
-<!-- Koodiesimerkki -->
+Week
 
 #### Unix and Windows line endings
+
+<!-- Koodiesimerkki -->
+
+---
+
+_I was already familiar with the different encodings and line ending difference between Windows and UNIX systems._
+_But I had never encountered such a concise treatment of how to handle these problems with bash before._
 
 ## Week 4: Advanced Corpus Processing
 
