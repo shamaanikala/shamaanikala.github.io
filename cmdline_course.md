@@ -138,6 +138,12 @@ _It was fun to learn more about_ `grep`_!_
 
 <!-- Koodiesimerkki -->
 
+---
+
+_This was the one of the most time consuming weeks._
+_For some reason I also got many of the exercises wrong eventhough I checked and rechecked my answers and regular expressions many times before submitting the Moodle Quiz._
+_I wonder if the there were some differences between my Project Gutenberg text files and the ones used with the model solutions._
+
 ## Week 5: Scripting and Configuration Files
 
 <!-- Koodiesimerkki -->
