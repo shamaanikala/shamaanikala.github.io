@@ -94,16 +94,45 @@ _Using `ssh` config was new to me._
 
 ## Week 3: Basic Corpus Processing
 
-Week
+Week 3 focused on text file and standard input and output operations with the command-line tools.
 
-#### Unix and Windows line endings
+`grep` tools was introduced and its extended regular expression syntax (`-E` in Linux bash) was used for analyzing text files.
 
-<!-- Koodiesimerkki -->
+### Unix and Windows line endings
+
+Unix and Windows text files have different kinds of line endings.
+
+**Windows**:
+`\r\n`
+
+**Unix**:
+`\n`
+
+To change the used line-endings one can use bash programs `dos2unix` and `unix2dox`.
+
+#### Example 3.1 Changing Windows text file to Unix format
+
+```bash
+dos2unix file.txt
+```
+
+#### Example 3.2 Using `ap-get` to install `dos2unix`
+
+If the `dos2unix` program is not installed, it can be installed with `apt`.
+
+Updating the package information before installation.
+
+```bash
+sudo apt-get update
+sudo apt-get install dos2unix
+```
 
 ---
 
 _I was already familiar with the different encodings and line ending difference between Windows and UNIX systems._
 _But I had never encountered such a concise treatment of how to handle these problems with bash before._
+
+_It was fun to learn more about_ `grep`_!_
 
 ## Week 4: Advanced Corpus Processing
 
@@ -159,24 +188,30 @@ I could deepen my understanding of regex, bash and sed, grep...
 
 The table lists selection of the commands used during the course with a short description.
 
-| `bash` command    | description                                                   |
-| ----------------- | ------------------------------------------------------------- |
-| `ls`              | Lists files                                                   |
-| `tr`              | Translates or deletes characters                              |
-| `ln`              | Create links within the file system                           |
-| `chmod`           | Edit the file permissions                                     |
-| `touch`           | "Touch" a file. Create an empty file if it doesn't exist yet. |
-| `mkdir`           | Create new folder/directory                                   |
-| `cp`              | Copy file                                                     |
-| `ssh`             | _Secure SHell_, connect to a remote server                    |
-| `scp`             | _Secure Copy_, Exchange files with the remote server          |
-| `cat`             | Catenate files. Or output one file to the terminal            |
-| `rm`              | Remove file                                                   |
-| `which <command>` | Outputs the location of `<command>` stored in the `$PATH`     |
-| `kill`            | Kill a process                                                |
-| `ps aux`          | List processes                                                |
-| `grep`            |                                                               |
-| `sort`            |                                                               |
-| `wget`            | Download files                                                |
-| `nano`            | Simple command line text editor                               |
-| `vim`             | Powerful command line text editor                             |
+| `bash` command    | description                                                      |
+| ----------------- | ---------------------------------------------------------------- |
+| `ls`              | Lists files                                                      |
+| `tr`              | Translates or deletes characters                                 |
+| `ln`              | Create links within the file system                              |
+| `chmod`           | Edit the file permissions                                        |
+| `touch`           | "Touch" a file. Create an empty file if it doesn't exist yet.    |
+| `mkdir`           | Create new folder/directory                                      |
+| `cp`              | Copy file                                                        |
+| `ssh`             | _Secure SHell_, connect to a remote server                       |
+| `scp`             | _Secure Copy_, Exchange files with the remote server             |
+| `cat`             | Catenate files. Or output one file to the terminal               |
+| `rm`              | Remove file                                                      |
+| `which <command>` | Outputs the location of `<command>` stored in the `$PATH`        |
+| `kill`            | Kill a process                                                   |
+| `ps aux`          | List processes                                                   |
+| `grep`            | Filter standard output or files with regular expressions.        |
+| `sort`            | Sort standard output                                             |
+| `wget`            | Download files                                                   |
+| `nano`            | Simple command line text editor                                  |
+| `vim`             | Powerful command line text editor                                |
+| `less`            | Display text file                                                |
+| `dos2unix`        | Change Windows line-endings to Unix line-endings                 |
+| `unix2dos`        | Change Unix line-endings to Windows line-endings                 |
+| `iconv`           | Conver text file character encondings                            |
+| `uniq`            | "_report or omit repeated lines_" - `whatis uniq`                |
+| `whatis`          | "_display one-line manuaal page descriptions_" - `whatis whatis` |
